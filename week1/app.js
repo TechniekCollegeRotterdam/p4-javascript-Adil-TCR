@@ -1,7 +1,6 @@
 let name;
 let country;
 let p = document.getElementById("output");
-
 let nameChange = document.getElementById("nameChange");
 let countryChange = document.getElementById("countryChange");
 
