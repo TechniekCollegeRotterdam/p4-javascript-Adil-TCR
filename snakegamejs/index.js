@@ -1,3 +1,4 @@
+//VARIABELEN
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -7,7 +8,7 @@ class SnakePart {
     this.y = y;
   }
 }
-
+//Variabelen voor snelheid, canvasgrootte, tile grootte, slanggrootte, appelgrootte.
 let speed = 4;
 
 let tileCount = 20;
@@ -75,7 +76,7 @@ function drawGame() {
   if (score > 40) {
     speed = 20;
   }
-
+// 1000 gedeeld door 4 als je geen boven 5 heb etc. hoevaak je scherm refreshed in 1 seconde.
   setTimeout(drawGame, 1000 / speed);
 }
 
@@ -141,7 +142,7 @@ function clearScreen() {
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
-
+//Slangbody tekenen.
 function drawSnake() {
   ctx.fillStyle = "white";
   for (let i = 0; i < snakeParts.length; i++) {
@@ -162,9 +163,9 @@ function changeSnakePosition() {
   headX = headX + xVelocity;
   headY = headY + yVelocity;
 }
-
+//TEKENEN APPELKLEUR
 function drawApple() {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "yellow";
   ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
 }
 
