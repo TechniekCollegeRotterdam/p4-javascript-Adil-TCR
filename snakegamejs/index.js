@@ -51,7 +51,7 @@ function drawGame() {
   drawSnake();
 
   drawScore();
-// Des te hoger je score = Des te hoger je speed
+  // Des te hoger je score = Des te hoger je speed
   if (score > 5) {
     speed = 6;
   }
@@ -76,7 +76,7 @@ function drawGame() {
   if (score > 40) {
     speed = 20;
   }
-// 1000 gedeeld door 4 als je geen boven 5 heb etc. hoevaak je scherm refreshed in 1 seconde.
+  // 1000 gedeeld door 4 als je geen boven 5 heb etc. hoevaak je scherm refreshed in 1 seconde.
   setTimeout(drawGame, 1000 / speed);
 }
 
