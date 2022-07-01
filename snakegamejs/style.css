@@ -8,14 +8,18 @@ body {
     background-color: #1f1f20;
 }
 
-.primary-btn{
-border: rgb(104, 101, 101);
-padding: 10px 20px;
-border-radius: 10px;
-background-color: black;
-color: whitesmoke;
+.primary-btn {
+    border: rgb(104, 101, 101);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
 }
 
-.primaryimage{
+.primaryimage {
     opacity: 0.6;
+}
+
+.scroll {
+    color: whitesmoke;
 }
